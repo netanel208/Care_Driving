@@ -64,9 +64,20 @@ Teachers can be filtered by 4 categories:
 - `gear type`
 - `price`
 
-![image](https://user-images.githubusercontent.com/44946807/88775098-f9839c00-d18c-11ea-90a3-a43b907aa0ee.png)
+![image](https://user-images.githubusercontent.com/44946807/88775862-e9b88780-d18d-11ea-81d5-5315cbc74eae.png)  ![image](https://user-images.githubusercontent.com/44946807/88775516-77e03e00-d18d-11ea-8452-080203518556.png)  
+
 
 After selecting a suitable teacher.
-- The student can go in and see the details of the teacher.
-- The student can call and send an email to the teacher.
+- The student can go in and **see the details** of the teacher.
+- The student can **call** to the teacher.
+- The student can send an **email** to the teacher.
 - The student can submit a **login request** to schedule shared driving lessons in the future.
+
+#### Requests
+![image](https://user-images.githubusercontent.com/44946807/88776402-9266e700-d18e-11ea-9987-feae4cf51dbe.png)
+
+Teacher-only users have access to this screen.
+In this screen the teacher can see all the student requests he has received, **including their personal details**.
+An application that has not yet been approved will have two buttons: `Accept` or `Reject`.
+
+**A rejected request will disappear the next time we open the screen.**
