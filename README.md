@@ -41,5 +41,14 @@ All the content of the application is in the menu which varies depending on the 
 #### Personal area
 ![image](https://user-images.githubusercontent.com/44946807/88773083-5af63b80-d18a-11ea-9fbf-101d8859e736.png)
 
-Each user has a personal area where he can see his details stored in the system.
+Each user has a personal area where he can see his details stored in the system (by clicking on his photo in the menu).
 The user can edit this information (besides the necessary login information).
+
+#### Home screen
+![image](https://user-images.githubusercontent.com/44946807/88774409-153a7280-d18c-11ea-8833-70a31e41f08e.png)
+
+The home screen for each user will show driving lessons that he will have or lessons that have already been done.
+You can scroll right or left to switch between dates.
+Each date has a list of driving lessons on the same day, with student / teacher details, phone and time.
+If the student / teacher does not have lessons, this screen will remain blank.
+You can click on one of the lessons to see more details.
