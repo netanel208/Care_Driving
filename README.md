@@ -81,3 +81,19 @@ In this screen the teacher can see all the student requests he has received, **i
 An application that has not yet been approved will have two buttons: `Accept` or `Reject`.
 
 **A rejected request will disappear the next time we open the screen.**
+
+#### Determining driving lessons
+![image](https://user-images.githubusercontent.com/44946807/88776925-4c5e5300-d18f-11ea-97d2-8887b68bd215.png)
+
+For student-only users, a floating action button will appear on the side of the screen.
+- By clicking on the plus you can determine a future driving lesson provided that the student has a teacher.
+- A student will not be able to schedule a lesson during hours when the teacher has a lesson with another student, he will have the option to schedule a lesson at another time.
+- If the student does not have a teacher who has approved him, he will have the option to go to the teacher search screen.
+- A student can choose what type of lesson he wants to determine:
+`Regular lesson (one hour)`, 
+`Double lesson (two hours)`
+
+![image](https://user-images.githubusercontent.com/44946807/88778044-a875a700-d190-11ea-811a-33b26c438578.png)     ![image](https://user-images.githubusercontent.com/44946807/88778107-c3481b80-d190-11ea-969f-87c336396a1f.png) ![image](https://user-images.githubusercontent.com/44946807/88778263-f7bbd780-d190-11ea-8d1b-c079ff914742.png)   ![image](https://user-images.githubusercontent.com/44946807/88778320-0e622e80-d191-11ea-8e7b-729154ff6499.png)
+
+
+
