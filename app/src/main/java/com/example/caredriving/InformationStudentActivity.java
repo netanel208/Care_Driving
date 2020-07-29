@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
+import com.example.caredriving.firebase.model.FirebaseBaseModel;
+import com.example.caredriving.firebase.model.FirebaseDBUser;
+import com.example.caredriving.firebase.model.dataObject.StudentObj;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -23,27 +25,24 @@ public class InformationStudentActivity extends AppCompatActivity implements Vie
     private Button btnSave;
     private Button btnPrevious;
 
-    private Student student;
-    private final String STUDENT = "student";
-    private String userId;
+    private StudentObj student;
     private Intent startIntent;
 
-    private DatabaseReference myRef;
+    private FirebaseDBUser fb_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_student);
 
-        myRef = FirebaseDatabase.getInstance().getReference();
+        fb_user = new FirebaseDBUser();
 
         transmission = findViewById(R.id.spnInformationStudentTransmission);
         greenForm = findViewById(R.id.spnInformationStudentGreenForm);
         theory = findViewById(R.id.spnInformationStudentTheory);
 
         startIntent = getIntent();
-        student = (Student) startIntent.getSerializableExtra("User");
-        userId = (String) startIntent.getSerializableExtra("uid");
+        student = (StudentObj) startIntent.getSerializableExtra("UserObj");
 
         btnSave = findViewById(R.id.btnInformationStudentSaveInfo);
         btnPrevious = findViewById(R.id.btnInformationStudentPreviousInfo);
@@ -69,17 +68,20 @@ public class InformationStudentActivity extends AppCompatActivity implements Vie
     private void saveUserInformation() {
 
         student.setTeacherId("null");
+        student.setId(fb_user.getMyUid());
 
-        myRef.child("users").child(userId).child("info").setValue(student);
-        myRef.child("users").child(userId).child("type").setValue(STUDENT);
+        // write to DB
+        fb_user.writeUserToDB(student);
+
         Intent intent = new Intent(InformationStudentActivity.this, MainActivity.class);
+        intent.putExtra("UserObj", student);
         startActivity(intent);
     }
 
     private void openPreviousPage() {
         Intent intent = new Intent(InformationStudentActivity.this, InformationActivity.class);
-        intent.putExtra("User", startIntent.getSerializableExtra("User"));
-        intent.putExtra("Type", "Student");
+        intent.putExtra("UserObj", startIntent.getSerializableExtra("UserObj"));
+        intent.putExtra("Type", "student");
         startActivity(intent);
     }
 

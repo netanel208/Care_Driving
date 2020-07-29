@@ -9,10 +9,10 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_search_teachers">Search Teachers</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_requests">Requests</string>
     <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_teacher">My Teacher</string>
+    <string name="menu_students">My Students</string>
 
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -27,17 +27,18 @@
     <string name="experience_prompt">Year of experience</string>
     <string name="green_form_prompt">Do you have green form?</string>
     <string name="theory_prompt">Did your passed theory exam?</string>
+    <string name="phone_numbers_prompt">Choose number code</string>
 
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
     <string name="location">Location</string>
-    <string name="phone">Phone</string>
+    <string name="phone">Phone:</string>
 
     <string name="teachers_experience">Experience</string>
     <string name="teachers_gear">Gear</string>
     <string name="teachers_car">Car Type</string>
     <string name="teachers_car_year">Year</string>
-    <string name="teachers_connect">Send conection request</string>
+    <string name="teachers_connect">Send connection request</string>
 
     <string name="price">Price</string>
     <string name="new_shekel">₪</string>
@@ -45,6 +46,82 @@
 
     <string name="car_brand">Car Brands</string>
     <string name="car_gear">Gear Types</string>
+
+    <string name="title_location_filter">Choose Location/s:</string>
+    <string name="title_car_brand_filter">Choose Car Brand/s:</string>
+    <string name="title_gear_filter">Choose Gear/s:</string>
+    <string name="title_price_filter">Choose Price Range:</string>
+    <string name="filter">Filter</string>
+
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="previous">Previous</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="registration_first_name">First name</string>
+    <string name="registration_last_name">Last name</string>
+    <string name="registration_city">City</string>
+    <string name="registration_age">Age</string>
+    <string name="registration_phone_number">Phone number</string>
+
+    <string name="registration_transmission">Transmission</string>
+    <string name="registration_theory">Theory</string>
+    <string name="registration_green_form">Green form</string>
+
+    <string name="registration_lesson_price">Lesson price</string>
+    <string name="registration_car_type">Car type</string>
+    <string name="registration_car_year">Car year</string>
+    <string name="registration_experience">Experience</string>
+
+    <string name="continue_">Continue</string>
+
+    <string name="information">Information</string>
+    <string name="students">students</string>
+    <string name="teachers">teachers</string>
+    <string name="lesson_create">Create</string>
+
+    <string name="error">Error</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="error_choose_teacher">You have not chosen a teacher.</string>
+    <string name="error_go_teacher_search">Do you want to find a teacher?</string>
+    <string name="error_time">Time is incorrect.</string>
+    <string name="error_date">Date is incorrect.</string>
+    <string name="error_past_date">Unable to create a lesson in the past.</string>
+    <string name="error_time_hint">Lesson should start at beginning of hour.</string>
+    <string name="error_time_example">For example 9:00 or 13:00.</string>
+    <string name="error_price">Price is incorrect.</string>
+    <string name="error_number">Number is incorrect.</string>
+    <string name="error_age">Age is incorrect.</string>
+    <string name="error_empty_age">Please enter your age</string>
+    <string name="error_last_name">Last name is incorrect.</string>
+    <string name="error_first_name">Name is incorrect.</string>
+    <string name="error_empty_first_name">Please enter your name</string>
+    <string name="error_empty_last_name">Please enter your last name</string>
+    <string name="error_lesson_created">Create lesson failed...</string>
+    <string name="error_teacher_is_busy">The teacher is busy at this time.</string>
+    <string name="error_student_is_busy">You already have lesson at this time.</string>
+    <string name="lesson_created_successfully">Lesson created successfully.</string>
+
+    <string name="set_date">Set date</string>
+    <string name="set_time">Set time</string>
+    <string name="create_lesson_question">Choose lesson duration:</string>
+    <string name="registration_title">Registration</string>
+    <string name="registration_cancel_question">Do you want to cancel this registration?</string>
+
+    <string name="create_new_lesson_title">Create new lesson</string>
+
+    <string name="teacher_not_found">You still have not chosen a teacher.</string>
+    <string name="students_not_found">You still have not any students.</string>
+    <string name="open_email_clients">Choose an email client:</string>
+
+    <string-array name="lesson_duration">
+        <item>Single lesson (1 hour)</item>
+        <item>Double lesson (2 hours)</item>
+    </string-array>
+
+
 
     <string-array name="yes_no">
         <item>No</item>
@@ -81,16 +158,33 @@
         <item>Holon</item>
     </string-array>
 
+    <string-array name="phone_numbers">
+        <item>050</item>
+        <item>052</item>
+        <item>053</item>
+        <item>054</item>
+        <item>055</item>
+        <item>057</item>
+    </string-array>
+
     <string-array name="transmission_type">
         <item>Auto</item>
         <item>Hand</item>
     </string-array>
 
     <string-array name="price_range">
-        <item>75-100</item>
-        <item>100-125</item>
-        <item>125-150</item>
-        <item>150+</item>
+        <item>75–100</item>
+        <item>100–125</item>
+        <item>125–150</item>
+        <item>150–175</item>
+        <item>175–200</item>
+        <item>225–250</item>
     </string-array>
+
+    <string name="regex_prices">–</string>
+    <string name="green_form">green form:</string>
+    <string name="theory">theory:</string>
+    <string name="city">city:</string>
+    <string name="Colon">:</string>
 
 </resources>

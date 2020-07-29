@@ -7,37 +7,31 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.caredriving.ui.home.HomeFragment"
+        android:name="com.example.caredriving.ui.navigationBar.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_search_teachers"
-        android:name="com.example.caredriving.ui.searchTeachers.SearchTeachersFragment"
+        android:name="com.example.caredriving.ui.navigationBar.searchTeachers.SearchTeachersFragment"
         android:label="@string/menu_search_teachers"
         tools:layout="@layout/fragment_search_teachers" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.caredriving.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_requests"
+        android:name="com.example.caredriving.ui.navigationBar.requests.RequestsFragment"
+        android:label="@string/menu_requests"
+        tools:layout="@layout/fragment_requests" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.caredriving.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_teacher"
+        android:name="com.example.caredriving.ui.navigationBar.teacher.MyTeacherFragment"
+        android:label="@string/menu_teacher"
+        tools:layout="@layout/fragment_teacher" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.caredriving.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.caredriving.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_students"
+        android:name="com.example.caredriving.ui.navigationBar.students.MyStudentsFragment"
+        android:label="@string/menu_students"
+        tools:layout="@layout/fragment_students" />
 </navigation>

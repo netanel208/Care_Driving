@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:padding="18dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDate"
+        android:text="Date"
+        android:layout_centerHorizontal="true"
+        android:textSize="38sp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorBackgroundBlue"/>
+
+
+    <ImageView
+        android:id="@+id/imgArrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_toEndOf="@+id/tvDate"
+        android:layout_toRightOf="@+id/tvDate"
+        android:layout_alignTop="@+id/tvDate"
+        android:layout_alignBottom="@+id/tvDate"
+        android:background="@color/colorBackgroundBlue"/>
+
+    <ImageView
+        android:id="@+id/imgArrowLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_left"
+        android:layout_toStartOf="@+id/tvDate"
+        android:layout_toLeftOf="@+id/tvDate"
+        android:layout_alignTop="@+id/tvDate"
+        android:layout_alignBottom="@+id/tvDate"
+        android:background="@color/colorBackgroundBlue"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerviewLessonsToday"
+        android:layout_below="@+id/tvDate"/>
+
+
+</RelativeLayout>

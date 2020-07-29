@@ -5,23 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="10dp"
     tools:context=".InformationStudentActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="14dp"
+            android:layout_margin="10dp"
             android:text="Please fill student information"
             android:textAlignment="center"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textSize="24dp"
+            android:textStyle="bold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,18 +32,15 @@
                 android:id="@+id/tvInformationStudentTransmission"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Transmission" />
+                android:padding="4dp"
+                android:text="@string/registration_transmission" />
 
             <Spinner
                 android:id="@+id/spnInformationStudentTransmission"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:entries="@array/transmission_type"
+                android:padding="4dp"
                 android:prompt="@string/transmission_prompt" />
 
         </LinearLayout>
@@ -59,17 +55,14 @@
                 android:id="@+id/tvInformationStudentGreenForm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Green form" />
+                android:padding="4dp"
+                android:text="@string/registration_green_form" />
 
             <Spinner
                 android:id="@+id/spnInformationStudentGreenForm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:padding="4dp"
                 android:autofillHints="1"
                 android:prompt="@string/green_form_prompt"
                 android:entries="@array/yes_no"/>
@@ -86,17 +79,14 @@
                 android:id="@+id/tvInformationStudentTheory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Theory" />
+                android:padding="4dp"
+                android:text="@string/registration_theory" />
 
             <Spinner
                 android:id="@+id/spnInformationStudentTheory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:padding="4dp"
                 android:autofillHints="1"
                 android:prompt="@string/theory_prompt"
                 android:entries="@array/yes_no"/>
@@ -106,7 +96,7 @@
     </LinearLayout>
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
@@ -120,16 +110,18 @@
                 android:id="@+id/btnInformationStudentSaveInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SAVE" />
+                android:textAllCaps="true"
+                android:text="@string/save" />
 
             <Button
                 android:id="@+id/btnInformationStudentPreviousInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PREVIOUS" />
+                android:textAllCaps="true"
+                android:text="@string/previous" />
         </LinearLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>

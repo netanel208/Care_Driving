@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/layoutTeachersDetails"
+    android:background="@color/colorBackgroundBlue">
+
+
+    <TextView
+        android:id="@+id/tvStudentFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStudentLastName"
+        android:text="@string/first_name"
+        android:layout_toEndOf="@+id/tvStudentFirstName"
+        android:layout_toRightOf="@+id/tvStudentFirstName"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStudentFirstName"
+        android:text="@string/city"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvCityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStudentFirstName"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/tvCity"
+        android:layout_toRightOf="@+id/tvCity"
+        android:text="@string/city_prompt"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tvGreenForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCity"
+        android:text="@string/green_form"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvGreenFormValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCity"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/tvGreenForm"
+        android:layout_toRightOf="@+id/tvGreenForm"
+        android:text="@string/green_form_prompt"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+
+
+    <TextView
+        android:id="@+id/tvTheory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGreenForm"
+        android:text="@string/theory"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tvTheoryValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGreenForm"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/tvTheory"
+        android:layout_toRightOf="@+id/tvTheory"
+        android:text="@string/theory_prompt"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTheory"
+        android:text="@string/phone"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tvPhoneNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTheory"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/tvTheory"
+        android:layout_toRightOf="@+id/tvTheory"
+        android:text="@string/phone_numbers_prompt"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Accept"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnReject"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/btnAccept"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Reject"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/btnReject"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="21dp"
+        android:enabled="false"
+        android:text="Status"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</RelativeLayout>

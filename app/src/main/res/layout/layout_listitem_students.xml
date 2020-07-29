@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/layoutStudentsDetails"
+    android:background="@color/colorBackgroundBlue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStudentFirstName"
+        android:text="@string/first_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStudentLastName"
+        android:text="@string/first_name"
+        android:layout_toEndOf="@+id/tvStudentFirstName"
+        android:layout_toRightOf="@+id/tvStudentFirstName"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLocation"
+        android:text="@string/location"
+        android:layout_below="@+id/tvStudentFirstName"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTheoryTxt"
+        android:text="Theory:"
+        android:layout_below="@+id/tvLocation"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTheory"
+        android:text="Theory"
+        android:layout_below="@+id/tvLocation"
+        android:textSize="14sp"
+        android:layout_toEndOf="@+id/tvTheoryTxt"
+        android:layout_toRightOf="@+id/tvTheoryTxt"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGreenFormTxt"
+        android:text="Green Form:"
+        android:layout_below="@+id/tvTheory"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGreenForm"
+        android:text="Green Form"
+        android:layout_below="@+id/tvTheory"
+        android:textSize="14sp"
+        android:layout_toEndOf="@+id/tvGreenFormTxt"
+        android:layout_toRightOf="@+id/tvGreenFormTxt"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPhoneNumber"
+        android:text="@string/phone"
+        android:layout_below="@+id/tvGreenForm"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPhone"
+        android:layout_toEndOf="@+id/tvPhoneNumber"
+        android:layout_toRightOf="@+id/tvPhoneNumber"
+        android:layout_alignTop="@+id/tvPhoneNumber"
+        android:layout_alignBottom="@+id/tvPhoneNumber"
+        android:src="@drawable/ic_phone"/>
+
+
+
+</RelativeLayout>

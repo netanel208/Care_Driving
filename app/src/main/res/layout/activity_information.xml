@@ -5,168 +5,297 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="10dp"
     tools:context=".InformationActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="5dp">
+        android:id="@+id/layoutSVregistration">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Please fill your information"
-            android:textAlignment="center"
-            android:textSize="24dp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/firstNameInfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvInformationFirstName"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="First name" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/layoutFillInfo">
 
-            <EditText
-                android:id="@+id/etInformationFirstName"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Please fill your information"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/firstNameInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/firstNameInfoLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvInformationFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="@string/registration_first_name" />
+
+                        <TextView
+                            android:id="@+id/tvInformationFirstNameError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:padding="4dp"
+                            android:textSize="16sp"
+                            android:textColor="#F00000"
+                            android:text="*" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/etInformationFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="John"
+                        android:inputType="textPersonName"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lastNameInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lastNameInfoLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvInformationLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4dp"
+                            android:text="@string/registration_last_name" />
+
+                        <TextView
+                            android:id="@+id/tvInformationLastNameError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:padding="4dp"
+                            android:textSize="16sp"
+                            android:textColor="#F00000"
+                            android:text="*" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etInformationLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Snow"
+                        android:inputType="textPersonName"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ageInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ageInfoLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvInformationAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4dp"
+                            android:text="@string/registration_age" />
+
+                        <TextView
+                            android:id="@+id/tvInformationAgeError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:padding="4dp"
+                            android:textSize="16sp"
+                            android:textColor="#F00000"
+                            android:text="*" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etInformationAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="25"
+                        android:inputType="number"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cityInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInformationCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:text="@string/registration_city" />
+
+                    <Spinner
+                        android:id="@+id/spnInformationCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/city_prompt"
+                        android:entries="@array/cities"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/numberInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/numberInfoLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvInformationNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4dp"
+                            android:text="@string/registration_phone_number" />
+
+                        <TextView
+                            android:id="@+id/tvInformationNumberError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:padding="4dp"
+                            android:textColor="#F00000"
+                            android:textSize="16sp"
+                            android:text="*" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spnInformationNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="1"
+                            android:prompt="@string/phone_numbers_prompt"
+                            android:entries="@array/phone_numbers"/>
+
+                        <EditText
+                            android:id="@+id/etInformationNumber"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:hint="1234567"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioStudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_marginRight="20dp"
+                        android:text="Student"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioTeacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="John"
-                android:inputType="textPersonName"
-                android:padding="4dp" />
-        </LinearLayout>
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/layoutFillInfo"
+                android:paddingTop="10dp">
 
-        <LinearLayout
-            android:id="@+id/lastNameInfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvInformationLastName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="4dp"
-                android:text="Last name" />
+                    <Button
+                        android:id="@+id/btnInformationNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:text="@string/next" />
 
-            <EditText
-                android:id="@+id/etInformationLastName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Snow"
-                android:inputType="textPersonName"
-                android:padding="4dp" />
-        </LinearLayout>
+                    <Button
+                        android:id="@+id/btnInformationCancelInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:text="@string/cancel" />
+                </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ageInfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
+            </RelativeLayout>
 
-            <TextView
-                android:id="@+id/tvInformationAge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="4dp"
-                android:text="Age" />
+        </RelativeLayout>
 
-            <EditText
-                android:id="@+id/etInformationAge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="25"
-                android:inputType="number"
-                android:padding="4dp" />
-        </LinearLayout>
+    </ScrollView>
 
-        <LinearLayout
-            android:id="@+id/cityInfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvInformationCity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="4dp"
-                android:text="City" />
-
-
-
-            <Spinner
-                android:id="@+id/spnInformationCity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints="1"
-                android:prompt="@string/city_prompt"
-                android:entries="@array/cities"/>
-        </LinearLayout>
-
-        <RadioGroup
-            android:id="@+id/radioUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radioStudent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:layout_marginRight="20dp"
-                android:text="Student"
-                android:textSize="20dp" />
-
-            <RadioButton
-                android:id="@+id/radioTeacher"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Teacher"
-                android:layout_marginLeft="20dp"
-                android:textSize="20dp" />
-        </RadioGroup>
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnInformationNext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="NEXT" />
-
-            <Button
-                android:id="@+id/btnInformationCancelInfo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CANCEL" />
-        </LinearLayout>
-
-    </RelativeLayout>
 
 </RelativeLayout>

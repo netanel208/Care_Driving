@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHour"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:text="00:00" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutDetails"
+        android:layout_toEndOf="@+id/tvHour"
+        android:layout_toRightOf="@+id/tvHour"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First name"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last name"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/tvFirstName"
+            android:layout_toEndOf="@+id/tvFirstName"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvFirstName"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

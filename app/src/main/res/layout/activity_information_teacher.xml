@@ -5,178 +5,179 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="10dp"
     tools:context=".InformationTeacherActivity">
 
-
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/layoutSVregistrationTeacher"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Please fill teacher information"
-            android:textAlignment="center"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvInformationTeacherCarBrands"
+            <LinearLayout
+                android:id="@+id/layoutFillInfoTeacher"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Car brand" />
+                android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/spnInformationTeacherCarBrands"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Please fill teacher information"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInformationTeacherCarBrands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/registration_car_type" />
+
+                    <Spinner
+                        android:id="@+id/spnInformationTeacherCarBrands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/car_brands"
+                        android:padding="4dp"
+                        android:prompt="@string/car_brands_prompt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInformationTeacherCarYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/registration_car_year" />
+
+                    <Spinner
+                        android:id="@+id/spnInformationTeacherCarYears"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInformationTeacherTransmission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/registration_transmission" />
+
+                    <Spinner
+                        android:id="@+id/spnInformationTeacherTransmission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/transmission_type"
+                        android:padding="4dp"
+                        android:prompt="@string/transmission_prompt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInformationTeacherExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/registration_experience" />
+
+                    <Spinner
+                        android:id="@+id/spnInformationTeacherExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="1"
+                        android:padding="4dp"
+                        android:prompt="@string/experience_prompt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvInformationTeacherPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/registration_lesson_price" />
+
+                    <EditText
+                        android:id="@+id/etInformationTeacherLessonPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="130"
+                        android:padding="4dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:entries="@array/car_brands"
-                android:prompt="@string/car_brands_prompt" />
-        </LinearLayout>
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/layoutFillInfoTeacher"
+                android:paddingTop="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvInformationTeacherCarYear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Car year" />
+                    <Button
+                        android:id="@+id/btnInformationTeacherSaveInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:text="@string/save" />
 
-            <Spinner
-                android:id="@+id/spnInformationTeacherCarYears"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp" />
+                    <Button
+                        android:id="@+id/btnInformationTeacherPreviousInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:text="@string/previous" />
+                </LinearLayout>
 
-        </LinearLayout>
+            </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvInformationTeacherTransmission"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Transmission" />
-
-            <Spinner
-                android:id="@+id/spnInformationTeacherTransmission"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:entries="@array/transmission_type"
-                android:prompt="@string/transmission_prompt" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvInformationTeacherExperience"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Experience" />
-
-            <Spinner
-                android:id="@+id/spnInformationTeacherExperience"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:autofillHints="1"
-                android:prompt="@string/experience_prompt" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvInformationTeacherPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:paddingLeft="4dp"
-                android:text="Lesson price" />
-
-            <EditText
-                android:id="@+id/etInformationTeacherLessonPrice"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+        </RelativeLayout>
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/btnInformationTeacherSaveInfo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SAVE" />
-
-            <Button
-                android:id="@+id/btnInformationTeacherPreviousInfo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="PREVIOUS" />
-        </LinearLayout>
-
-    </RelativeLayout>
-
+    </ScrollView>
 
 </RelativeLayout>
