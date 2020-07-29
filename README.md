@@ -64,7 +64,8 @@ Teachers can be filtered by 4 categories:
 - `gear type`
 - `price`
 
-![image](https://user-images.githubusercontent.com/44946807/88775862-e9b88780-d18d-11ea-81d5-5315cbc74eae.png)  ![image](https://user-images.githubusercontent.com/44946807/88775516-77e03e00-d18d-11ea-8452-080203518556.png)  
+![image](https://user-images.githubusercontent.com/44946807/88775862-e9b88780-d18d-11ea-81d5-5315cbc74eae.png)  ![image](https://user-images.githubusercontent.com/44946807/88775516-77e03e00-d18d-11ea-8452-080203518556.png)  ![image](https://user-images.githubusercontent.com/44946807/88778978-df988800-d191-11ea-8965-d2c4ed83c07c.png)
+
 
 
 After selecting a suitable teacher.
@@ -90,10 +91,20 @@ For student-only users, a floating action button will appear on the side of the 
 - A student will not be able to schedule a lesson during hours when the teacher has a lesson with another student, he will have the option to schedule a lesson at another time.
 - If the student does not have a teacher who has approved him, he will have the option to go to the teacher search screen.
 - A student can choose what type of lesson he wants to determine:
-`Regular lesson (one hour)`, 
+`Single lesson (one hour)`, 
 `Double lesson (two hours)`
 
 ![image](https://user-images.githubusercontent.com/44946807/88778044-a875a700-d190-11ea-811a-33b26c438578.png)     ![image](https://user-images.githubusercontent.com/44946807/88778107-c3481b80-d190-11ea-969f-87c336396a1f.png) ![image](https://user-images.githubusercontent.com/44946807/88778263-f7bbd780-d190-11ea-8d1b-c079ff914742.png)   ![image](https://user-images.githubusercontent.com/44946807/88778320-0e622e80-d191-11ea-8e7b-729154ff6499.png)
 
+#### My teacher
+![image](https://user-images.githubusercontent.com/44946807/88778886-c099f600-d191-11ea-8303-2343e85e02e8.png)
 
+- For a student-type user - allows a quick way to contact the teacher.
+- Contains all the contact information of the teacher.
+
+#### My students
+![image](https://user-images.githubusercontent.com/44946807/88779188-25ede700-d192-11ea-998d-a0eb4f943fe5.png)
+
+- For a teacher-type user - allows a quick way to contact all of his students.
+- Contains all student contact information.
 
