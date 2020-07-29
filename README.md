@@ -16,7 +16,7 @@ Establish ways of communication between teacher and student.
 
 ##### Registration
 When a user wants to register for the system, he must enter the Register screen, where he must fill in his personal details and choose the type of user he is: a student or a teacher.
-After selecting the type of user he must fill in details according to the type of user selected.
+After selecting the type of user he must fill in details **according to the type of user selected**.
 Registration for the system is done using Firebase Authentication, via email and password.
 ##### Login
 Used for login for registered users (also uses Firebase Authentication).
