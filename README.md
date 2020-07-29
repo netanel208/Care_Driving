@@ -20,11 +20,11 @@ Registration for the system is done using Firebase Authentication, via email and
 
 Teacher registraton:
 
-![image](https://user-images.githubusercontent.com/44946807/88770977-3d73a280-d187-11ea-8bd1-686f2371933c.png)
+![image](https://user-images.githubusercontent.com/44946807/88771908-9b54ba00-d188-11ea-86fb-01cd82492db6.png)  ![image](https://user-images.githubusercontent.com/44946807/88770977-3d73a280-d187-11ea-8bd1-686f2371933c.png)
 
 Student registraton:
 
-![image](https://user-images.githubusercontent.com/44946807/88771348-c8ed3380-d187-11ea-9efd-d65721717249.png)    ![image](https://user-images.githubusercontent.com/44946807/88770171-136db080-d186-11ea-91ad-8e2c0ce95d05.png)
+![image](https://user-images.githubusercontent.com/44946807/88770171-136db080-d186-11ea-91ad-8e2c0ce95d05.png)    ![image](https://user-images.githubusercontent.com/44946807/88771348-c8ed3380-d187-11ea-9efd-d65721717249.png)
 
 
 ##### Login
