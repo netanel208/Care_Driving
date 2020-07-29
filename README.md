@@ -29,3 +29,8 @@ Student registraton:
 
 ##### Login
 Used for login for registered users (also uses Firebase Authentication).
+
+#### Menu
+![image](https://user-images.githubusercontent.com/44946807/88772332-4cf3eb00-d189-11ea-9522-a452c1842c4b.png)   ![image](https://user-images.githubusercontent.com/44946807/88772548-9c3a1b80-d189-11ea-9a8d-a47f17c2e163.png)
+
+
