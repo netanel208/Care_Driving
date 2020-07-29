@@ -52,3 +52,21 @@ You can scroll right or left to switch between dates.
 Each date has a list of driving lessons on the same day, with student / teacher details, phone and time.
 If the student / teacher does not have lessons, this screen will remain blank.
 You can click on one of the lessons to see more details.
+
+#### Teachers search
+![image](https://user-images.githubusercontent.com/44946807/88775028-dbb63700-d18c-11ea-8b55-78805d8ecf28.png)
+
+Only student-type users have access to this screen.
+The screen includes all the teachers who have registered for the system.
+Teachers can be filtered by 4 categories:
+- `location`
+- `vehicle type`
+- `gear type`
+- `price`
+
+![image](https://user-images.githubusercontent.com/44946807/88775098-f9839c00-d18c-11ea-90a3-a43b907aa0ee.png)
+
+After selecting a suitable teacher.
+- The student can go in and see the details of the teacher.
+- The student can call and send an email to the teacher.
+- The student can submit a **login request** to schedule shared driving lessons in the future.
