@@ -33,4 +33,13 @@ Used for login for registered users (also uses Firebase Authentication).
 #### Menu
 ![image](https://user-images.githubusercontent.com/44946807/88772332-4cf3eb00-d189-11ea-9522-a452c1842c4b.png)   ![image](https://user-images.githubusercontent.com/44946807/88772548-9c3a1b80-d189-11ea-9a8d-a47f17c2e163.png)
 
+All the content of the application is in the menu which varies depending on the type of user.
+- Identical screens: Personal area (photo), Home.
+- Student: Search Teachers, My Teacher.
+- Teacher: Request, My Students.
 
+#### Personal area
+![image](https://user-images.githubusercontent.com/44946807/88773083-5af63b80-d18a-11ea-9fbf-101d8859e736.png)
+
+Each user has a personal area where he can see his details stored in the system.
+The user can edit this information (besides the necessary login information).
